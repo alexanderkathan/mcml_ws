@@ -1,0 +1,58 @@
+---
+title: "Quarto Document"
+author: "Norah Jones"
+toc: true
+number-sections: true
+highlight-style: pygments
+format: 
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf: 
+    geometry: 
+      - top=30mm
+      - left=20mm
+  docx: default
+---
+
+Einstein's theory of special relatively that expresses the equivalence of mass and energy:
+
+$E = mc^{2}$
+
+## Overview
+
+Knuth says always be literate [@knuth1984].
+
+```{python}
+1 + 1
+```
+
+## References
+
+
+## Overview
+
+See @fig-simple in @sec-plot for a demonstration of a simple plot. 
+
+See @eq-stddev to better understand standard deviation.
+
+## Plot {#sec-plot}
+
+```{python}
+#| label: fig-simple
+#| fig-cap: "Simple Plot"
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+```
+
+## Equation {#sec-equation}
+
+$$
+s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}
+$$ {#eq-stddev}
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
